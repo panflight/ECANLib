@@ -42,6 +42,8 @@
 
 #include   "ECAN.def"
 
+
+///////////////////////////////////////////////////////////////////////
 #if defined(__XC8__)
     #define Coll 1
 #elif defined(HI_TECH_C)
@@ -49,6 +51,9 @@
 #else
     #define MCHP_C18
 #endif
+///////////////////////////////////////////////////////////////////////
+
+
 
 #if defined(MCHP_C18) && defined(HITECH_C18)
 #error "Invalid Compiler selection."
